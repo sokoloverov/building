@@ -1,15 +1,17 @@
 export default 'timer.js';
 import './howler.js';
+import '../sounds/alarm-clock-beep.mp3';
+import '../sounds/tikane.mp3';
 
 let secondsSet; //время в сек. задает клиент в поле формы
 let idInterval; //id временного интервала для его остановки
 let secondsFinal; //время для отсчета таймера
 //звук будильника
 const alarmMain = new Howl({
-    src: ['./sounds/alarm-clock-beep-1_zjgin-vd.mp3']
+    src: ['./alarm-clock-beep.mp3']
 });
 const ticTac = new Howl({
-    src: ['./sounds/tikane.mp3']
+    src: ['./tikane.mp3']
 });
 
 //шаблон вставки таймера в hlml документ 
@@ -18,7 +20,6 @@ let templateTimer = `
         <div class="timer">
             <p>Задайте время в секундах и нажмите СТАРТ:</p>
             <input type="text" id="seconds">
-            <p>обратите внимение, здесь предусмотрена примитивная проверка при вводе и не надо нажимать СТОП больше одного раза, пока я не даделаю отмену обработки события...</p>
             <button id="start" class="button button_green">СТАРТ</button>
             <button id="stop" class="hidden button button_red">СТОП</button>
             <p id="time-left"></p>

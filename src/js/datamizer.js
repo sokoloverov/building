@@ -6,8 +6,8 @@ import { formatError } from "./utils.js";
 
 //шаблон вставки датамайзера в hlml документ 
 let templateData = `
-    <form id="datecalc">
-        <h3>Калькулятор дат</h3>
+    <form id="datecalc" class="header1">
+        <h3 class="header1">Калькулятор дат</h3>
         <label>
             <strong>Первая дата:</strong>
             <input type="date" name="firstDate" />
@@ -16,7 +16,7 @@ let templateData = `
             <strong>Вторая дата:</strong>
             <input type="date" name="secondDate" />
         </label>
-        <button type="submit">Расчитать промежуток</button>
+        <button type="submit" class="button button_green">Расчитать промежуток</button>
         <p id="datecalc__result"></p>
     </form>
 `;
