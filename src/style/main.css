@@ -3,94 +3,61 @@
   padding: 0;
 }
 
-.tictac {
-  height: 200px;
+.main-window {
+  max-width: 1400px;
+  min-width: 640px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header1 {
+.ships {
+  height: 200px;
+  width: 300px;
+  margin: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header2 {
   display: block;
-  max-width: 100%;
-  min-width: 800px;
-  margin: 20px auto;
+  margin: 20px 0 20px;
   text-align: center;
+  color: #9c2121;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 50%;
-  margin: 50px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.timer {
-  display: block;
-  position: relative;
-  max-width: 75%;
-  margin: 50px auto;
+.frame {
+  border: 1px solid black;
+  margin: 0 5px 5px 0;
+}
+
+.note {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  font-weight: 800;
   text-align: center;
+  padding-bottom: 10px;
 }
 
-.button {
-  margin: 10px;
-  padding: 10px;
-}
-
-.button_green {
-  background-color: darkcyan;
-}
-
-.button_red {
-  background-color: brown;
-}
-
-.button_blue {
-  background-color: cornflowerblue;
-}
-
-.container {
+.sounds {
   display: block;
-  max-width: 100%;
-  margin: 50px auto;
-  text-align: center;
-  position: relative;
-}
-
-.clock {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  margin-top: 30px;
-}
-
-.arrow {
-  position: absolute;
-  width: 5px;
-  height: 99px;
-  background-color: chocolate;
-  -webkit-transform-origin: center 100%;
-          transform-origin: center 100%;
-  z-index: 1;
-}
-
-.border {
-  position: absolute;
-  left: -105px;
-  top: -14px;
-  width: 220px;
-  height: 220px;
-  background: #83a7c9;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.hidden {
-  display: none;
+  background-color: aqua;
 }
 /*# sourceMappingURL=main.css.map */
